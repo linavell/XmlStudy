@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 둘 이상의 memberInfo 들이 오면 + -->
+<!-- 어떤 엘리먼트 안에는 있고 어떤 엘리먼트 안에는 없는 속성은 뒤에 ? 붙이기 -->
+
+<!DOCTYPE togetherLion
+[
+<!ELEMENT togetherLion (memberInfo+)>         
+<!ELEMENT memberInfo (name, age, birthday, major, university)>		
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT birthday (#PCDATA)>
+<!ELEMENT major (#PCDATA)>
+<!ELEMENT university (#PCDATA)>
+<!ATTLIST memberInfo mid CDATA #IMPLIED>   
+]>
+
+<!-- #REQUIRED : 이 속성은 반드시 명시되어야 한다. -->
+<!-- #IMPLIED  : 이 속성은 명시되기도 하고, 명시되지 않기도 한다. -->
+<!-- #FIXED 특정값 : 이 속성은 특정값으로 고정되어 사용된다. -->
+
+
+<togetherLion>
+
+
+	<memberInfo mid="1">
+		<name>이아린</name>
+		<age>24</age>
+		<birthday><![CDATA[1999-11-17]]></birthday>
+		<major>Media Communication</major>
+		<university>Kwangwoon University</university>
+	</memberInfo>
+	
+	<memberInfo mid="2">
+		<name>이아린</name>
+		<age>24</age>
+		<birthday><![CDATA[1999-11-17]]></birthday>
+		<major>Media Communication</major>
+		<university>Kwangwoon University</university>
+	</memberInfo>
+	
+	
+</togetherLion>

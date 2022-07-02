@@ -1,0 +1,21 @@
+
+6월 15, 2022 09:14:04.11 NEW SESSION
+6월 15, 2022 09:14:04.11 [10652:8100:0615/091404.109:ERROR:device_event_log_impl.cc(214)] [09:14:04.110] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+6월 15, 2022 09:14:04.11 [10652:8100:0615/091404.110:ERROR:device_event_log_impl.cc(214)] [09:14:04.110] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+6월 15, 2022 09:15:01.95 [10652:9272:0615/091501.954:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+6월 15, 2022 11:34:11.58 [10652:8100:0615/113411.584:ERROR:interface_endpoint_client.cc(665)] Message 0 rejected by interface blink.mojom.WidgetHost
+6월 15, 2022 12:41:45.83 [10652:8100:0615/124145.835:ERROR:interface_endpoint_client.cc(665)] Message 0 rejected by interface blink.mojom.WidgetHost
+6월 15, 2022 13:59:43.63 [10652:11524:0615/135943.634:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+6월 15, 2022 13:59:47.65 [10652:11524:0615/135947.654:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+6월 15, 2022 13:59:47.65 [10652:6316:0615/135947.657:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+6월 15, 2022 13:59:47.65 [10652:6316:0615/135947.659:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+6월 15, 2022 13:59:52.05 [10652:11524:0615/135952.057:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+6월 15, 2022 13:59:52.06 [10652:356:0615/135952.060:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+6월 15, 2022 14:00:07.85 [10652:11524:0615/140007.852:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+6월 15, 2022 14:00:07.86 [10652:8336:0615/140007.864:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+6월 15, 2022 14:00:08.66 [10652:8100:0615/140008.661:ERROR:device_event_log_impl.cc(214)] [14:00:08.661] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+6월 15, 2022 14:00:09.89 [10652:11524:0615/140009.893:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+6월 15, 2022 14:00:25.56 [10652:11524:0615/140025.563:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+6월 15, 2022 14:00:25.56 [10652:356:0615/140025.565:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+6월 15, 2022 14:00:25.56 [10652:356:0615/140025.567:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+6월 15, 2022 14:00:32.66 [10652:356:0615/140032.663:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2

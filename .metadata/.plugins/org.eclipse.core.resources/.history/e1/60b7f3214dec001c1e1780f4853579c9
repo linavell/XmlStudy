@@ -1,0 +1,32 @@
+package com.test;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+
+public class XmlDomTest02
+{
+	public static void main(String[] args)
+	{
+		// 김상기 010-1213-4546
+		// 김민성 010-5678-6789
+		
+		try
+		{
+			
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document xmlObj = null;
+			
+			String url = "memberList.xml";
+			xmlObj = builder.parse(url);
+			
+			
+		} catch (Exception e)
+		{
+			// TODO: handle exception
+			System.out.println(e.toString());
+		}
+	}
+}

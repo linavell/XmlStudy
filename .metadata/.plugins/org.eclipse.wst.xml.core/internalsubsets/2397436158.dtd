@@ -1,0 +1,9 @@
+
+<!ELEMENT togetherLion (memberInfo+)>         
+<!ELEMENT memberInfo (name, age, birthday, major, university)>		
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT birthday (#PCDATA)>
+<!ELEMENT major (#PCDATA)>
+<!ELEMENT university (#PCDATA)>
+<!ATTLIST memberInfo mid CDATA #IMPLIED>   

@@ -1,0 +1,44 @@
+package com.test;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+public class XmlDomTest02
+{
+	public static void main(String[] args)
+	{
+		// 김상기 010-1213-4546
+		// 김민성 010-5678-6789
+		
+		try
+		{
+			
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document xmlObj = null;
+			
+			String url = "memberList.xml";
+			xmlObj = builder.parse(url);
+			
+			Element root = xmlObj.getDocumentElement();
+			
+			NodeList memberInfoNodeList = root.getElementsByTagName("memberInfo");
+			
+			for (int i=0; i<memberInfoNodeList.getLength(); i++)
+			{
+				Node memberInfo = memberInfoNodeList.item(i);
+			}
+			
+			
+		} catch (Exception e)
+		{
+			// TODO: handle exception
+			System.out.println(e.toString());
+		}
+	}
+}

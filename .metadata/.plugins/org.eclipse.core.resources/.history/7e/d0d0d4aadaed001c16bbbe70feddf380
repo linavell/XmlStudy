@@ -1,0 +1,13 @@
+/*===========================================================================
+	WeatherDAO.java
+	- DAO
+	- XML DOM 활용 → 원격 XML 읽어내기
+	  (http://www.kma.go.kr/weather/forecast/mid-term-rss3.jsp?stnId=108)
+=============================================================================*/
+
+package com.test;
+
+public class WeatherDAO
+{
+
+}

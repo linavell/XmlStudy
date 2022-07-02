@@ -1,0 +1,78 @@
+/*===========================================================================
+	WeatherDAO.java
+	- DAO
+	- XML DOM 활용 → 원격 XML 읽어내기
+	  (http://www.kma.go.kr/weather/forecast/mid-term-rss3.jsp?stnId=108)
+=============================================================================*/
+
+package com.test;
+
+import java.net.URL;
+import java.util.HashMap;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.xpath.XPath;
+
+import org.w3c.dom.Document;
+
+public class WeatherDAO
+{
+	// 공통 멤버 구성 → 멤버 변수 → 초기화 → 생성자
+	private Document xmlObj;
+	private XPath xPath;
+	private HashMap<String, String> map;
+	
+	// 생성자 정의 → 기본 생성자
+	public WeatherDAO()
+	{
+		this("108");		// 전국 기준
+		
+		/*
+		stnId=108	전국
+		stnId=109	서울, 경기
+		stnId=105	강원
+		stnId=131	충북
+		stnId=133	충남
+		stnId=146	전북
+		stnId=156	전남
+		stnId=143   경북
+		stnId=159   경남
+		stnId=184   제주
+		*/
+	}
+	
+	// 생성자 정의 → 매개변수 있는 생성자
+	public WeatherDAO(String stnID)
+	{
+		map = new HashMap<String, String>();
+		
+		map.put("맑음", "abc.png");
+		map.put("흐림", "abc.png");
+		map.put("비", "abc.png");
+		map.put("구름조금", "abc.png");
+		map.put("구름많음", "abc.png");
+		map.put("흐리고 비", "abc.png");
+		map.put("구름많고 비", "abc.png");
+		
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder builder = factory.newDocumentBuilder();
+		
+		String str = String.format("http://www.kma.go.kr/weather/forecast/mid-term-rss3.jsp?stnId=%s", stnId);
+		
+		URL url = new URL(str);
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
